@@ -1,122 +1,80 @@
-# 🧮🐍 Calculadora Simples em Python
+# 🧮 Calculadora em Python
 
-Projeto desenvolvido durante a **Imersão Alura + Google**, com o objetivo de dar os primeiros passos na programação com utilização da IA.
-
-A aplicação consiste em uma calculadora de terminal organizada, modular e interativa que realiza as quatro operações matemáticas fundamentais com tratamento de erros.
+Projeto desenvolvido durante a **Imersão Alura + Google**, focado no aprendizado prático de lógica de programação, boas práticas e versionamento de código com Python e GitHub.
 
 ---
 
-## 🚀 Funcionalidades
+## 📌 Sobre o Projeto
 
-- ➕ **Adição** (`+`)
-- ➖ **Subtração** (`-`)
-- ✖️ **Multiplicação** (`*`)
-- ➗ **Divisão** (`/`) com proteção contra divisão por zero
-- 🔁 **Menu interativo contínuo** para fazer vários cálculos sem reiniciar
-- 🛡️ **Validação de entradas** para evitar que o programa feche ao digitar letras ou opções inválidas
+A **Calculadora em Python** é uma aplicação de linha de comando (terminal) modular e interativa. O projeto foi construído para demonstrar como organizar funções de forma limpa, tratar erros de entrada do usuário e manter um fluxo contínuo de execução por meio de menus interativos.
 
 ---
 
-## 🧠 O que foi praticado no projeto
+## 🚀 Evolução do Projeto
 
-- **Funções (`def` / `return`):** Organização do código dividindo cada operação em blocos reutilizáveis.
-- **Laços de Repetição (`while` / `break` / `continue`):** Criação de um menu contínuo com opção de saída.
-- **Condicionais (`if` / `elif` / `else`):** Tomada de decisão com base na escolha do usuário.
-- **Tratamento de Exceções (`try` / `except`):** Proteção do fluxo contra entradas inválidas (`ValueError`).
-- **Boas Práticas:** Código legível, comentários explicativos e ponto de entrada padrão (`if __name__ == "__main__":`).
+O repositório reflete a progressão dos estudos ao longo das aulas da imersão:
+
+### 🔹 Aula 01: Estrutura Base e Operações Fundamentais
+Na primeira aula, foi construída a base da aplicação com:
+* **As Quatro Operações Básicas:** Funções dedicadas para adição (`+`), subtração (`-`), multiplicação (`*`) e divisão (`/`).
+* **Tratamento de Divisão por Zero:** Verificação condicional para evitar o erro `ZeroDivisionError`, retornando uma mensagem clara ao usuário.
+* **Menu Interativo:** Utilização de um laço `while True` para permitir múltiplos cálculos sem fechar o programa.
+* **Validação de Entrada:** Bloco `try / except ValueError` para capturar digitações inválidas (letras ou símbolos).
 
 ---
 
-## 🎓 **Sobre a Imersão**
+### 🔹 Aula 02: Evolução e Adição de Porcentagem
+Na segunda aula, a calculadora recebeu novos recursos e refinamentos:
+* **Nova Função de Porcentagem (`porcentagem`):** Implementação da regra matemática $\frac{\text{valor} \times \text{percentual}}{100}$ isolada em uma função reutilizável.
+* **Expansão do Menu:** Adição da opção `5 -> Porcentagem (%)` com validação atualizada (opções de `0` a `5`).
+* **Entradas Dinâmicas e Amigáveis:** 
+  * Para contas normais: solicita o *primeiro* e o *segundo* número.
+  * Para porcentagem: solicita especificamente o *valor principal* e a *porcentagem (%)*, evitando confusão na ordem dos dados.
+* **Exibição Formatada do Resultado:** Apresentação clara e contextualizada (exemplo: `Conta: 15% de 200 = 30`).
 
-Este projeto foi construído como parte dos estudos práticos da Imersão Alura + Google, explorando os fundamentos da lógica de programação com IA e o ecossistema Python de maneira descomplicada e aplicada.
+---
+
+## ⚙️ Estrutura das Funções
+
+| Função | Parâmetros | Descrição |
+| :--- | :--- | :--- |
+| `adicao(a, b)` | Dois números | Retorna a soma entre `a` e `b`. |
+| `subtracao(a, b)` | Dois números | Retorna a diferença entre `a` e `b`. |
+| `multiplicacao(a, b)` | Dois números | Retorna o produto entre `a` e `b`. |
+| `divisao(a, b)` | Dois números | Retorna a divisão de `a` por `b` (com proteção para `b == 0`). |
+| `porcentagem(valor, percentual)` | Valor base e taxa % | Retorna o cálculo percentual aplicado ao valor. |
+| `calculadora()` | Nenhum | Controla o menu, fluxo do programa e formatação. |
 
 ---
 
 ## 💻 Como Executar
 
 ### Pré-requisitos
-Ter o **Python 3** instalado em sua máquina.
+* Ter o [Python 3](https://www.python.org/) instalado no computador.
 
 ### Passo a Passo
-
-1. Clone o repositório ou baixe o arquivo `calculadora.py`:
+1. Clone este repositório ou baixe o arquivo `calculadora.py`:
    ```bash
-   git clone https://github.com/SEU_USUARIO/calculadora-python.git
-   cd calculadora-python
-
-2. Acesse o diretório do projeto
-  ```bash
-  cd calculadora-python
-  ```
-
-3. Execute o scrpit
-- No Windows:
-  ```bash
-  python calculadora.py
+   git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+   ```
+2. Acesse a pasta do projeto no terminal:
+   ```bash
+   cd "SEU-REPOSITORIO"
+   ```
+3. Execute o script:
+   ```bash
+   python calculadora.py
+   ```
 
 ---
 
-## 🖥️ **Exemplo de Uso no Terminal**
+## 🛠️ Tecnologias Utilizadas
 
-```text
-========================================
-      CALCULADORA SIMPLES EM PYTHON     
-========================================
-
-Selecione a operação desejada:
-  1 -> Adição (+)
-  2 -> Subtração (-)
-  3 -> Multiplicação (*)
-  4 -> Divisão (/)
-  0 -> Sair do programa
-
-Digite a opção desejada (0 a 4): 1
-Digite o primeiro número: 15
-Digite o segundo número: 27.5
-----------------------------------------
-Conta: 15 + 27.5 = 42.5
-----------------------------------------
-
-Selecione a operação desejada:
-  1 -> Adição (+)
-  2 -> Subtração (-)
-  3 -> Multiplicação (*)
-  4 -> Divisão (/)
-  0 -> Sair do programa
-
-Digite a opção desejada (0 a 4): 4
-Digite o primeiro número: 42
-Digite o segundo número: 0
-----------------------------------------
-Resultado: Erro: Divisão por zero não é permitida!
-----------------------------------------
-
-Digite a opção desejada (0 a 4): 0
-
-Obrigado por usar a calculadora! Bons estudos em Python.
-```
----
-
-## 🎯 **Próximos Passos e Desafios**
-
-- **Potenciação** (**): Adicionar uma função potencia(a, b) para calcular exponenciação.
-- **Resto da Divisão** (%): Criar uma operação de módulo para identificar números pares e ímpares.
-- **Cálculo de Porcentagem**: Desenvolver uma opção para calcular porcentagens com base em dois números.
-- **Histórico de Operações**: Utilizar uma lista ([]) para registrar os últimos cálculos e permitir exibi-los no menu.
-- **Interface Gráfica (GUI)**: Migrar para uma interface de botões e tela usando bibliotecas como Tkinter ou CustomTkinter.
+* **Python 3**
+* **Git & GitHub** (Controle de Versão)
 
 ---
 
-## 👨‍💻 **Autor**
+## 👨‍💻 Autor
 
-Desenvolvido por Lucas Pandori durante a Imersão da Alura.
-
-- 💼 LinkedIn: www.linkedin.com/in/lucaspandori
-- 🐙 GitHub: https://github.com/LucasPandoriDev
-
----
-
-## 📄 **Licença**
-
-Este projeto está sob a licença MIT. Sinta-se à vontade para clonar, estudar, modificar e compartilhar!
+Projeto desenvolvido como parte dos estudos na **Imersão Alura + Google**.
