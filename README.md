@@ -51,10 +51,15 @@ Este projeto foi construído como parte dos estudos práticos da **Imersão Alur
    cd calculadora-python
    ```
 
-2. Execute o script:
-   ```bash
-   python calculadora.py
-   ```
+2. Execute o script desejado:
+   * **Versão com Interface Gráfica (Janela):**
+     ```bash
+     python calculadora_gui.py
+     ```
+   * **Versão no Terminal:**
+     ```bash
+     python calculadora.py
+     ```
 
 ---
 
@@ -112,11 +117,11 @@ Obrigado por usar a calculadora! Bons estudos em Python.
 
 ## 🎯 Próximos Passos e Desafios
 
-* [x] **Cálculo de Porcentagem:** Desenvolver uma opção para calcular porcentagens com base em dois números *(Concluído na Aula 02!)*
-* [ ] **Potenciação (`**`):** Adicionar uma função `potencia(a, b)` para calcular exponenciação.
-* [ ] **Resto da Divisão (`%`):** Criar uma operação de módulo para identificar números pares e ímpares.
-* [ ] **Histórico de Operações:** Utilizar uma lista (`[]`) para registrar os últimos cálculos e permitir exibi-los no menu.
-* [ ] **Interface Gráfica (GUI):** Migrar para uma interface de botões e tela usando bibliotecas como Tkinter ou CustomTkinter.
+* [x] **Cálculo de Porcentagem:** Desenvolver uma opção para calcular porcentagens com base em dois números *(Concluído!)*
+* [x] **Potenciação (`**`):** Adicionar uma função `potencia(a, b)` para calcular exponenciação *(Concluído!)*
+* [x] **Resto da Divisão (`%`):** Criar uma operação de módulo para identificar números pares e ímpares *(Concluído!)*
+* [x] **Interface Gráfica (GUI):** Migrar para uma interface de botões e tela usando a biblioteca Tkinter *(Concluído!)*
+* [ ] **Histórico de Operações:** Utilizar uma lista (`[]`) para salvar o histórico de todas as operações em um painel lateral ou arquivo.
 
 ---
 

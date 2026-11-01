@@ -28,6 +28,18 @@ def porcentagem(valor, percentual):
     """Calcula a porcentagem de um valor (ex: percentual% de valor)."""
     return (valor * percentual) / 100
 
+def potencia(a, b):
+    """Retorna a elevado à potência de b (a ** b)."""
+    return a ** b
+
+def resto_divisao(a, b):
+    """Retorna o resto da divisão inteira entre a e b (a % b).
+    Inclui verificação para evitar divisão por zero!
+    """
+    if b == 0:
+        return "Erro: Divisão por zero não é permitida!"
+    return a % b
+
 # 2. FUNÇÃO PRINCIPAL QUE CONTROLA O MENU E O FLUXO DO PROGRAMA
 def calculadora():
     print("=" * 40)
@@ -43,9 +55,11 @@ def calculadora():
         print("  3 -> Multiplicação (*)")
         print("  4 -> Divisão (/)")
         print("  5 -> Porcentagem (%)")
+        print("  6 -> Potenciação (^)")
+        print("  7 -> Resto da Divisão (%)")
         print("  0 -> Sair do programa")
         
-        opcao = input("\nDigite a opção desejada (0 a 5): ").strip()
+        opcao = input("\nDigite a opção desejada (0 a 7): ").strip()
         
         # 3. VERIFICAÇÃO SE O USUÁRIO DESEJA SAIR
         if opcao == "0":
@@ -53,8 +67,8 @@ def calculadora():
             break  # Interrompe o laço 'while'
             
         # 4. VALIDAÇÃO DA OPÇÃO ESCOLHIDA
-        if opcao not in ["1", "2", "3", "4", "5"]:
-            print("Opção inválida! Escolha apenas entre 0, 1, 2, 3, 4 ou 5.")
+        if opcao not in ["1", "2", "3", "4", "5", "6", "7"]:
+            print("Opção inválida! Escolha apenas entre 0, 1, 2, 3, 4, 5, 6 ou 7.")
             continue  # Volta para o início do laço
             
         # 5. ENTRADA DOS DOIS NÚMEROS COM TRATAMENTO DE ERROS
@@ -62,6 +76,12 @@ def calculadora():
             if opcao == "5":
                 num1 = float(input("Digite o valor principal: "))
                 num2 = float(input("Digite a porcentagem (%): "))
+            elif opcao == "6":
+                num1 = float(input("Digite a base: "))
+                num2 = float(input("Digite o expoente: "))
+            elif opcao == "7":
+                num1 = float(input("Digite o dividendo: "))
+                num2 = float(input("Digite o divisor: "))
             else:
                 num1 = float(input("Digite o primeiro número: "))
                 num2 = float(input("Digite o segundo número: "))
@@ -85,6 +105,12 @@ def calculadora():
         elif opcao == "5":
             resultado = porcentagem(num1, num2)
             operador = "%"
+        elif opcao == "6":
+            resultado = potencia(num1, num2)
+            operador = "^"
+        elif opcao == "7":
+            resultado = resto_divisao(num1, num2)
+            operador = "% (resto)"
             
         # 7. EXIBIÇÃO FORMATADA DO RESULTADO
         print("-" * 40)
