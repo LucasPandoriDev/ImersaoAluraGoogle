@@ -1,19 +1,11 @@
 # 📝 Minha Lista de Tarefas (To-Do List)
 
-> Aplicação web interativa para gerenciamento de tarefas diárias, desenvolvida com foco em código limpo, semântica e boas práticas de desenvolvimento front-end.
+> Aplicação web interativa para gerenciamento de tarefas diárias, desenvolvida durante a Imersão Alura + Google, com o objetivo de dar os primeiros passos na programação com utilização da IA. A aplicação permite criar, gerenciar, filtrar e persistir tarefas cotidianas em uma interface moderna, limpa, responsiva e agradável de usar.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
-
----
-
-## 📌 Sobre o Projeto
-
-Este projeto foi desenvolvido como parte dos meus estudos em **desenvolvimento de software**, com o objetivo de consolidar os conceitos fundamentais da tríade da web: **HTML5**, **CSS3** e **JavaScript puro (Vanilla)**.
-
-A aplicação permite criar, gerenciar, filtrar e persistir tarefas cotidianas em uma interface moderna, limpa, responsiva e agradável de usar.
 
 ---
 
@@ -110,11 +102,12 @@ Você não precisa de servidores, Node.js ou comandos de instalação no termina
 
 ---
 
-## 👤 Autor
+## 👨‍💻 Autor
 
-Desenvolvido por **Lucas Pandori** durante seus estudos em desenvolvimento de software.
+Desenvolvido por Lucas Pandori durante a Imersão da Alura.
 
-* GitHub: [@LucasPandoriDev](https://github.com/LucasPandoriDev)
+💼 LinkedIn: linkedin.com/in/lucaspandori
+🐙 GitHub: LucasPandoriDev
 
 ---
 
