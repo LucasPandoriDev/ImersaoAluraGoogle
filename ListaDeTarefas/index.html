@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista de Tarefas</title>
+    <!-- Vincula o arquivo de estilos visuais (CSS) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho da página -->
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <p class="subtitulo">Organize o seu dia de forma simples e visual</p>
+        </header>
+
+        <!-- Formulário para digitar e adicionar uma nova tarefa -->
+        <form id="form-tarefa" class="form-tarefa">
+            <input 
+                type="text" 
+                id="input-tarefa" 
+                placeholder="Ex: Estudar JavaScript, lavar a louça..." 
+                autocomplete="off"
+            >
+            <button type="submit" id="btn-adicionar">Adicionar</button>
+        </form>
+
+        <!-- Barra de filtros: permite alternar a visualização das tarefas -->
+        <div class="filtros" role="group" aria-label="Filtros de visualização">
+            <button type="button" class="btn-filtro ativo" data-filtro="todas">Todas</button>
+            <button type="button" class="btn-filtro" data-filtro="pendentes">Pendentes</button>
+            <button type="button" class="btn-filtro" data-filtro="concluidas">Concluídas</button>
+        </div>
+
+        <!-- Seção onde as tarefas aparecerão na tela -->
+        <main>
+            <ul id="lista-tarefas" class="lista-tarefas">
+                <!-- As tarefas serão adicionadas aqui dinamicamente pelo JavaScript -->
+            </ul>
+
+            <!-- Mensagem exibida caso a lista esteja vazia -->
+            <div id="mensagem-vazia" class="mensagem-vazia">
+                <p>Nenhuma tarefa adicionada ainda. Digite algo acima para começar!</p>
+            </div>
+        </main>
+
+        <!-- Rodapé com estatísticas e botão para limpar concluídas -->
+        <footer>
+            <span id="contador-tarefas">0 pendente(s) · 0 concluída(s)</span>
+            <button type="button" id="btn-limpar-concluidas" class="btn-limpar">Limpar concluídas</button>
+        </footer>
+    </div>
+
+    <!-- Vincula o arquivo de lógica e interatividade (JavaScript) -->
+    <script src="script.js"></script>
+</body>
+</html>
