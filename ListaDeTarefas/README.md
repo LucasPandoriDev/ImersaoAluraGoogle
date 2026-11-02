@@ -5,11 +5,10 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
 
 ---
 
-## ✨ Funcionalidades
+## 🎯 Funcionalidades
 
 * ➕ **Adicionar Tarefas:** Digite a atividade e pressione `Enter` ou clique no botão **"Adicionar"** (com validação para evitar campos em branco).
 * ✅ **Conclusão com Feedback Visual:** Ao marcar uma tarefa, seu estilo é transformado em tempo real com texto tachado (*strikethrough*), cor atenuada e indicador verde.
@@ -75,7 +74,7 @@ lista-de-tarefas/
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## 💻 Como Executar o Projeto Localmente
 
 Você não precisa de servidores, Node.js ou comandos de instalação no terminal:
 
@@ -106,7 +105,7 @@ Você não precisa de servidores, Node.js ou comandos de instalação no termina
 
 Desenvolvido por Lucas Pandori durante a Imersão da Alura.
 
-- 💼 LinkedIn: linkedin.com/in/lucaspandori
+- 💼 LinkedIn: www.linkedin.com/in/lucaspandori
 - 🐙 GitHub: LucasPandoriDev
 
 ---
