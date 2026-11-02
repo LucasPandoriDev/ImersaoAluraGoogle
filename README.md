@@ -1,18 +1,17 @@
 # 🚀 Imersão Alura + Google — Projetos Desenvolvidos
 
-> Repositório com as aplicações desenvolvidas durante a **Imersão Alura + Google**, explorando os primeiros passos no desenvolvimento de software, lógica de programação e front-end com o auxílio de Inteligência Artificial.
+> Repositório com as aplicações desenvolvidas durante a **Imersão Engenharia de Software: Dev na Era da IA Alura + Google**, explorando os primeiros passos no desenvolvimento de software com o auxílio de Inteligência Artificial.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge)
 
 ---
 
 ## 📌 Sobre a Imersão
 
-Este repositório reúne os projetos práticos construídos ao longo da **Imersão Alura + Google**. O objetivo central foi aprender a pensar como uma pessoa desenvolvedora, aplicando conceitos fundamentais da ciência da computação — desde algoritmos e tratamento de erros no back-end com **Python**, até interfaces visuais responsivas e manipulação da DOM no front-end com **HTML, CSS e JavaScript**.
+Este repositório reúne os projetos práticos construídos ao longo da **Imersão Alura + Google**. O objetivo central foi aprender a pensar como uma pessoa desenvolvedora, explorando os fundamentos da lógica de programação com IA e o ecossistema Python de maneira descomplicada e aplicada.
 
 ---
 
@@ -93,19 +92,6 @@ Uma aplicação front-end completa e moderna que permite gerenciar tarefas diár
 
 ### 🚀 Como executar a Lista de Tarefas:
 Basta abrir o arquivo **`index.html`** dentro da pasta `ListaDeTarefas` em qualquer navegador web (Google Chrome, Edge, Firefox, etc.).
-
----
-
-## 🧠 Tabela Comparativa de Habilidades Desenvolvidas
-
-| Competência | Projeto Calculadora (Python) | Projeto Lista de Tarefas (Web) |
-| :--- | :--- | :--- |
-| **Ambiente** | Terminal / Linha de comando | Navegador Web / Interface Gráfica |
-| **Linguagem Base** | Python 3 | JavaScript (ES6+), HTML5, CSS3 |
-| **Entrada de Dados** | `input()` do console | Formulário com `<input>` e `<button>` |
-| **Fluxo e Estado** | Variáveis e laço `while` | Array de objetos sincronizado com a DOM |
-| **Persistência** | Execução em tempo de memória | `localStorage` nativo do navegador |
-| **Tratamento de Falhas** | `try / except` para valores inválidos | Validação de strings vazias (`trim()`) e escape de tags |
 
 ---
 
