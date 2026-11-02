@@ -106,7 +106,7 @@ Você não precisa de servidores, Node.js ou comandos de instalação no termina
 Desenvolvido por Lucas Pandori durante a Imersão da Alura.
 
 - 💼 LinkedIn: www.linkedin.com/in/lucaspandori
-- 🐙 GitHub: LucasPandoriDev
+- 🐙 GitHub: https://github.com/LucasPandoriDev
 
 ---
 
